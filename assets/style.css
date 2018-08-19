@@ -8,6 +8,8 @@ body {
   font-weight:100;
   /* Couleurs */
   --blue: rgb(2, 128, 144);
+  --red:rgb(217,63,95); /*#d93f5f*/
+  --opale:rgb(0,184,174); /*#00b8ae*/
 }
 
 h1, h2, h3 {
@@ -25,7 +27,7 @@ a {
 }
 
 a:hover {
-  color:var(--orange);
+  color:var(--red);
   text-decoration:none;
 }
 
@@ -279,6 +281,21 @@ img {
 }
 
 /*-----------------------------------------------------------------------*/
+/* AUTRESACTIVITÉS                                                                   */
+/*-----------------------------------------------------------------------*/
+.plusieursactivites img {
+  width:100%;
+  height:auto;
+}
+
+@media (max-width: 767px) {
+  .plusieursactivites {display:none;}
+}
+
+.autresactivites a {color:var(--red); font-weight:600}
+.autresactivites a:hover {color:var(--blue);}
+
+/*-----------------------------------------------------------------------*/
 /* FOOTER                                                                */
 /*-----------------------------------------------------------------------*/
 
@@ -302,7 +319,7 @@ img {
 }
 
 .footercontent a:hover {
-  color:var(--orange);
+  color:var(--red);
 }
 
 .footercontent .fab {
