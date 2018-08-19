@@ -8,6 +8,8 @@ body {
   font-weight:100;
   /* Couleurs */
   --blue: rgb(2, 128, 144);
+  --grey: rgb(227, 232, 232);
+  --orange: rgb(244, 142, 0);
 }
 
 h1, h2, h3 {
@@ -93,34 +95,25 @@ a:hover {
 
 .banner {
   height:85vh;
+  background-image: url("../assets/images/MaximedeBeauchesne_Portrait.png");
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position:center bottom;
+  background-size: 60% auto;
+  background-position:right bottom;
 }
 
 .banner .container {
   height:100%;
   padding:5%;
   position:relative;
-  text-align:left;
 }
 
 .banner .logo {
+  text-align:right;
   position:absolute;
   top:15px;
   right:15px;
-  display: flex;
-  justify-content:right;
-  align-items: center;
+  width:100%;
 }
-
-.banner .logo img {
-  height:42px;
-  padding-bottom:6px;
-  width:auto;
-}
-
-
 
 h1 {
   color:rgba(1,1,1,0.5);
@@ -136,21 +129,18 @@ h1, h2 {
 }
 
 @media (min-width: 992px) {
-  .banner {background-image: url("../assets/images/banner.jpg");}
-  .banner .logo img {height:42px;  padding-bottom:6px;}
   .banner h2{font-size:21px;}
+  .banner .bonjour {text-align:left;}
   .banner .bonjour .keyword {font-size:50px;}
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .banner {background-image: url("../assets/images/banner.jpg");}
-  .banner .logo img {height:36px;  padding-bottom:6px;}
   .banner h2{font-size:18px;}
+  .banner .bonjour {text-align:center;}
   .banner .bonjour .keyword {font-size:40px;}
 }
 @media (max-width: 767px) {
-  .banner {background-image: url("../assets/images/bannerphone.jpg");}
-  .banner .logo img {height:30px;  padding-bottom:6px;}
   .banner h2{font-size:14px;}
+  .banner .bonjour {text-align:left;}
   .banner .bonjour .keyword {font-size:30px;}
 }
 
@@ -170,6 +160,13 @@ h1, h2 {
 /* MISSION                                                               */
 /*-----------------------------------------------------------------------*/
 
+.mission {
+  background-image: url("../assets/images/MontBlancInstinkto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position:bottom;
+  padding-bottom:5%;
+}
 
 .mission p {
   text-align:center;
@@ -217,10 +214,6 @@ h1, h2 {
 
 .valeursperso {
   text-align:center;
-  background-image: url("../assets/images/greywoodlogo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center;
 }
 
 @media (min-width: 992px) {
@@ -283,11 +276,6 @@ img {
 
 .footer {
   padding-bottom:20px;
-    background-image: url("../assets/images/footer.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:top;
-
 }
 
 .footercontent {
