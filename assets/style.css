@@ -129,6 +129,7 @@ a:hover {
   justify-content:right;
   align-items: center;
   flex-wrap:nowrap;
+  margin-right:0px;
 }
 
 .banner .logo img {
