@@ -233,7 +233,6 @@ h1, h2 {
 }
 @media (max-width: 767px) {
   .sujet {margin:25px 0px;}
-  .sujet img {display:none;}
 }
 
 
