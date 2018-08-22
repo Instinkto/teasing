@@ -2,14 +2,19 @@
 /* GLOBAL                                                                */
 /*-----------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import "couleur";
 
 body {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
   font-weight:100;
-  /* Couleurs */
   --blue: rgb(2, 128, 144);
   --red:rgb(217,63,95); /*#d93f5f*/
   --opale:rgb(0,184,174); /*#00b8ae*/
+  --brown:rgb(77,53,46); /*#4d352e*/
+  --orange:rgb(191,110,51);/*#bf6e33*/
+  --grey:rgb(211,188,175);/*#d3bcaf*/
+  --beige:rgb(240,218,200);/*#f0dac8*/
+  --white:rgb(253,251,249);/*#fdfbf9*/
 }
 
 h1, h2, h3 {
@@ -242,7 +247,7 @@ h1, h2 {
 
 .valeursperso {
   text-align:center;
-  background-image: url("../assets/images/greywoodlogo.jpg");
+  background-image: url("../assets/images/greywood.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
@@ -262,9 +267,26 @@ h1, h2 {
 /* TÉMOIGNAGES                                                           */
 /*-----------------------------------------------------------------------*/
 
+.temoignages {
+  padding-bottom:40px;
+  background-image: url("../assets/images/bannerbleueetpattern.jpg");
+  background-size:cover;
+}
+#carouseltemoignages {
+  padding-bottom:20px;
+  color:black;
+}
+
+#carouseltemoignages .card {
+  padding:30px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
 .carousel-indicators {
   position:absolute;
-  bottom:-10px;
+  bottom:-20px;
 }
 
 .testimony p {
@@ -281,12 +303,15 @@ h1, h2 {
 
 @media (min-width: 992px) {
   .role {font-size:15px;}
+  #carouseltemoignages .card {height: 300px;}
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .role {font-size:12px;}
+  #carouseltemoignages .card {height: 250px;}
 }
 @media (max-width: 767px) {
   .role {font-size:12px;}
+  #carouseltemoignages .card {height: 70vh;}
 }
 
 /*-----------------------------------------------------------------------*/
@@ -323,7 +348,7 @@ img {
 
 .footer {
   padding-bottom:20px;
-    background-image: url("../assets/images/footer.jpg");
+  background-image: url("../assets/images/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position:top;
