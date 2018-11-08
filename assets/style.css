@@ -7,7 +7,7 @@
 body {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
   font-weight:100;
-  --blue: rgb(2, 128, 144);
+  --blue: rgb(2, 128, 144); /*#028090*/
   --red:rgb(217,63,95); /*#d93f5f*/
   --opale:rgb(0,184,174); /*#00b8ae*/
   --brown:rgb(77,53,46); /*#4d352e*/
